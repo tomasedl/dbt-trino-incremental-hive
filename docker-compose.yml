@@ -44,6 +44,8 @@ services:
     ports:
       - '9000:9000'
       - '9001:9001'
+    volumes:
+      - /Users/tsedlace/skola/DP/code/minio/data:/data
     environment:
       MINIO_ACCESS_KEY: minio
       MINIO_SECRET_KEY: minio123
